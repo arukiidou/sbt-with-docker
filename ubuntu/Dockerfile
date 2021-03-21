@@ -22,5 +22,6 @@ RUN apt update && apt install -y \
     && apt update && apt install -y \
     containerd.io \
     docker-ce \
+    docker-ce-cli \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
