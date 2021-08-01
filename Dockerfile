@@ -1,5 +1,5 @@
 #ベースイメージを決定する
-FROM hseeberger/scala-sbt:8u282_1.4.9_2.13.5
+FROM hseeberger/scala-sbt:8u282_1.5.5_2.13.6
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
