@@ -18,11 +18,12 @@ https://hub.docker.com/r/hseeberger/scala-sbt
     docker-ce-cli \
 
 # Gitlab-runner(sbt-native-packager 1.8.1) Example
-'''
+
+```YAML:gitlab-ci.yml
 nativepack:
-  # 定番のscala-sbtイメージにdockerだけ追加したもの
-  # docker executor 使用可能
   image: arukiidou/scala-sbt-docker:8u282_1.5.5_2.13.6_20.10.7
+    # 定番のscala-sbtイメージにdockerだけ追加したもの
+    # docker executor 使用可能
   stage: nativepack
   when: manual
   tags:
@@ -41,5 +42,5 @@ nativepack:
   artifacts:
     paths:
      - target/docker
-
-'''
+    expire_in: 7d
+```
