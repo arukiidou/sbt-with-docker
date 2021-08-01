@@ -1,9 +1,11 @@
 # sbt-with-docker
-build sbt-scala imege with docker
-for sbt-native-packager 
+build sbt-scala imege with docker for sbt-native-packager(1.8.1)
+
+# dockerhub
+https://hub.docker.com/r/arukiidou/scala-sbt-docker
 
 # base-image
-hseeberger/scala-sbt
+hseeberger/scala-sbt  
 https://hub.docker.com/r/hseeberger/scala-sbt
 
 # additional-package
